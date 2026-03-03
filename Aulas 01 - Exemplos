@@ -1,1 +1,30 @@
 
+//Exemplo com entrada de dados
+// Importa a classe Scanner, que permite ler dados digitados pelo usuário
+import java.util.Scanner;
+// Nome da classe principal (deve ter o mesmo nome do arquivo)
+public class CadastroAluno {
+// Método principal - é onde o programa começa a executar
+public static void main(String[] args) {
+// Cria um objeto Scanner para ler dados do teclado
+Scanner entrada = new Scanner(System.in);
+// Declaração das variáveis
+String nome; // variável para armazenar texto
+int idade; // variável para armazenar número inteiro
+double nota; // variável para armazenar número com casas decimais
+// Solicita o nome
+System.out.print("Digite o nome do aluno: ");
+nome = entrada.nextLine(); // Lê uma linha inteira de texto
+// Solicita a idade
+System.out.print("Digite a idade: ");
+idade = entrada.nextInt(); // Lê um número inteiro
+// Solicita a nota
+System.out.print("Digite a nota final: ");
+nota = entrada.nextDouble(); // Lê um número decimal
+// Exibe os dados informados
+System.out.println("\n--- Dados do Aluno ---");
+System.out.println("Nome: " + nome);
+System.out.println("Idade: " + idade);
+System.out.println("Nota: " + nota);
+}
+}
